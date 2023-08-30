@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+/* font-classes */
+.ff-orbitron {
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* color classes */
+.text-clr-black {
+    color: #000;
+}
+
+.text-clr-blue {
+    color: #4A90E2;
+}
+
+.text-clr-dark {
+    color: rgba(17, 24, 39);
+}
+
+.text-clr-white {
+    color: #fff;
+}
+
+.bg-clr-black {
+    background-color: #000;
+}
+
+.bg-clr-blue {
+    background-color: #4A90E2;
+}
+
+.bg-clr-dark {
+    background-color: rgba(17, 24, 39);
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* control-wrapper */
+.control-wrapper {
+    max-width: 800px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.control-panel {
+    background-color: rgba(17, 24, 39);
+    padding: 20px;
+    width: 100%;
+    max-height: 500px;
+    border-radius: 8px;
+}
+
+
+
+/* panel-style */
+.panel-title,
+.btn-panel-title {
+    margin-bottom: 30px;
+}
+
+
+/* button style */
+.btn-panel-wrapper {
+    overflow: hidden;
+}
+
+.btn-blue {
+    border: 0;
+    border-radius: 8px;
+    padding: 15px 20px;
+    width: 100%;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn-blue:hover {
+    background-color: #000;
+    color: #4A90E2;
+}
+
+.btn-wrap {
+    position: relative;
+}
+
+.btn-hover-elements {
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    transform: translate(10px, 18px);
+    visibility: hidden;
+    opacity: 0;
+    animation: mymove 5s infinite;
+    white-space: nowrap;
+}
+
+@keyframes mymove {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+.btn-wrap:hover .btn-hover-elements {
+    visibility: visible;
+    opacity: 1;
+}
